@@ -163,7 +163,7 @@ public:
         else return true;
         return false;
     }
-    Dictionary<_KEY, _VALUE> Copy(Dictionary<_KEY, _VALUE>& Dist){
+    void Copy(Dictionary<_KEY, _VALUE>& Dist){
         this->_capacity = 1;
         this->_size = 0;
         delete[] this->_key, this->_value;
