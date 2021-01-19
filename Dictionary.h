@@ -56,7 +56,6 @@ protected:
 
 public:
     DictionaryUnit() { }
-    ~DictionaryUnit() { delete[] this->_keyUnit, this->_valueUnit; }
     _UNITKEY GetKey(int index){ return this->_keyUnit[index]; }
     _UNITVALUE GetValue(int index){ return this->_valueUnit[index]; }
     int KeyCount(){ return this->_keySize; }
